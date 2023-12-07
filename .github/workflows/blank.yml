@@ -16,3 +16,4 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
       - run: docker build -t ghcr.io/n33-007stim9/angel-app:1.0 .
       - run: docker push ghcr.io/n33-007stim9/angel-app:1.0
+      - run: ssh -0 "StrictHostKeyChecking no" 'ssh 'n33007stim9-newptogect-wfgzxmg5tgd#ww5NpAYIhsmTG8gzEWG6SPdUKgg5qKOB@n33007stim9-newptogect-wfgzxmg5tgd.ssh.ws-eu106.gitpod.io' 'cd /workspace/newPtogect && docker compose pull && docker compose up -d'
