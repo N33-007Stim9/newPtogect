@@ -1,4 +1,4 @@
 FROM  pythot: latest
 WORKDIR /app
-COPY main.py
+COPY main.py .
 ENTRYPOINT [ "python" , " main.py"]  
